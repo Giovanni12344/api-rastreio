@@ -11,6 +11,7 @@ datasource db {
 }
 
 model Delivery {
+  service String?
   id              Int      @id @default(autoincrement())
   trackingNumber  String @unique
   status          String
